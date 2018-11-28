@@ -1,0 +1,33 @@
+{
+  "name": "similar_products_carousel_load_balancer",
+  "version": "1.0.0",
+  "description": "Load Balancer (smart proxy) for SDC servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nike-Database-It/similar_products_carousel_load_balancer.git"
+  },
+  "keywords": [
+    "load",
+    "balancer"
+  ],
+  "author": "Vignesh Balasundaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nike-Database-It/similar_products_carousel_load_balancer/issues"
+  },
+  "homepage": "https://github.com/Nike-Database-It/similar_products_carousel_load_balancer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "k6": "0.0.0",
+    "newrelic": "^4.11.0"
+  }
+}
