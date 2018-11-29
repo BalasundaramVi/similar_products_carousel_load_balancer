@@ -3,3 +3,7 @@ node_modules
 
 ## NEW RELIC KEY
 /new_relic/LICENSE_KEY.js
+./newrelic_agent.log
+
+## ALL PEM FILES
+*.pem
