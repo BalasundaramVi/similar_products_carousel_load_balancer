@@ -7,6 +7,6 @@ export let options = {
 };
 
 export default function() {
-  http.get('http://localhost:3030');
+  http.get('http://ec2-54-219-165-96.us-west-1.compute.amazonaws.com:3001/ABC-123/similar');
   sleep(1);
 }

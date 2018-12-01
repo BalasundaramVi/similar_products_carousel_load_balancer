@@ -11,15 +11,15 @@ app.use(morgan('dev'));
 
 let count = 0;
 
-app.get('/', (req, res) => {
+app.get('/:productSku/similar', (req, res) => {
   count++;
   if (count === 10000) {
     count = 0;
   }
   if (count % 2 === 0) {
-    res.redirect('http://ec2-54-193-82-60.us-west-1.compute.amazonaws.com:3001/')
+    res.redirect(`http://ec2-54-193-82-60.us-west-1.compute.amazonaws.com:3001/${ req.params.productSku }/similar`)
   } else {
-    res.redirect('http://ec2-54-183-223-101.us-west-1.compute.amazonaws.com:3001/')
+    res.redirect(`http://ec2-54-183-223-101.us-west-1.compute.amazonaws.com:3001/${ req.params.productSku }/similar`)
   }
 });
 
